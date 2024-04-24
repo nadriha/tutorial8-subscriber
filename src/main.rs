@@ -14,15 +14,11 @@ UserCreatedHandler {
  let ten_millis = time::Duration::from_millis(1000);
  let now = time::Instant::now();
 
- // thread::sleep(ten_millis);
+ thread::sleep(ten_millis);
 
  println!("In Nadhira’s Computer [2206082000]. Message received: {:?}", message);
  Ok(())
  }
-
- fn get_handler_action(&self) -> String {
-         todo!()
-     }
 }
 
 
